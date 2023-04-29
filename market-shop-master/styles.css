@@ -1,0 +1,146 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.nav-container {
+  position: sticky;
+  z-index: 3;
+  top: 0;
+}
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  height: 12vh;
+  background-color: #1b1b1b;
+}
+
+.navbar-logo {
+  justify-self: start;
+  margin-left: 20px;
+  color: #fff;
+  margin-top: 4vh;
+  cursor: pointer;
+}
+
+.ver-carrito {
+  font-size: 25px;
+  margin-right: 20px;
+  margin-top: 3.5vh;
+  cursor: pointer;
+}
+
+/*Banner styles*/
+.banner {
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url(./pictures/baner.webp)
+}
+
+.banner-container {
+  text-align: center;
+  padding: 15% 0;
+}
+
+.banner h1 {
+  margin: 0;
+  color: white;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+  font-size: 62px;
+  font-weight: bold;
+}
+
+.banner p {
+  font-size: 30px;
+  color: white;
+  opacity: 0.7;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+}
+.navegador{
+  background-color: brown;
+}
+.navegador ul{
+  display: flex;
+  list-style: none;
+  justify-content: end;
+}
+
+.navegador ul li a{
+  display: block;
+  padding: 10px 20px;
+  color: #ccc;
+  text-decoration: none;
+
+}
+.navegador ul li a:hover{
+  color: white;
+  
+}
+.productos{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.producto{
+  width: 250px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  border: 1px solid;
+  border-radius: 5px;
+  overflow: hidden;
+  padding: 10px;
+  margin: 10px;
+  align-items: center;
+  text-align:  center;
+}
+.producto img{
+  width: 100%;
+}
+.producto span {
+  font-weight: bold;
+
+}
+.btn{
+  width: 100%;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  background-color: brown;
+  color: white;
+  cursor: pointer;
+}
+.formulario{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  border-radius: 5px;
+  padding: 20px;
+  min-width: 250px;
+  max-width: 600px;
+  background-color: brown;
+  margin: 10px auto;
+}
+
+.formulario input {
+  padding: 5px 15px;
+  border: none;
+  border-radius: 5px;
+}
+.formulario button{
+  background-color: white;
+  color: black;
+}
+
+.editar{
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.editar input {
+  padding: 5px 10px;
+  border: 1px solid;
+  border-radius: 5px;
+}
